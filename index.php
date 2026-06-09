@@ -1,0 +1,148 @@
+<?php
+session_start();
+?>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padaria Artesanal Delícias</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <header>
+            <?php include './includes/header.php'; ?>
+    </header>
+
+    <main>
+        <section class="container_banner">
+            <img src="./assets/img/fresh-0,3.png" alt="Hero image - banner de Pães">
+            <button class="button-comprar" onclick="window.location.href= './pages/produtos/Produtos.php'">Peça e
+                experimente!</button>
+        </section>
+
+        <section class="welcome-section">
+            <h1>Bem-vindo à Padaria Artesanal Delícias!</h1>
+            <p>Onde cada mordida é feita com amor e tradição.</p>
+        </section>
+
+        <section class="produtos">
+            <h2>Novidades no Cardápio</h2>
+            <div class="produtos-grid">
+                <div class="produto">
+                    <img class="img_produto" src="./assets/img/cookiesrecheados.jpg" alt="Cookies Recheados">
+                    <h3>Cookie de Caramelo Salgado</h3>
+                    <p>R$ 5,00</p>
+                    <p class="descricao-produto">Deliciosos cookies recheados com chocolate belga e gotas de caramelo
+                        salgado.</p>
+                </div>
+
+
+                <div class="produto">
+                    <img class="img_produto" src="./assets/img/empadão.jpg" alt="Torta de Frango Cremoso">
+                    <h3>Torta de Frango Cremoso</h3>
+                    <p>R$ 8,50</p>
+                    <p class="descricao-produto">Massa que derrete na boca e delicioso recheio de frango com catupiry.
+                    </p>
+                </div>
+
+
+                <div class="produto">
+                    <img class="img_produto" src="./assets/img/pao-de-queijo-minas.jpg" alt="Croissant">
+                    <h3>Pão de queijo Romeu e Julieta</h3>
+                    <p>R$ 6,00</p>
+                    <p class="descricao-produto">Pão de queijo, goiabada cascão e requeijão em barra. O protagonista que
+                        tira o fôlego.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="principais-vendidos">
+            <h2>Principais Vendidos</h2>
+            <div class="produtos-grid">
+                <div class="produto">
+                    <img class="img_produto" src="./assets/img/pãointegral.jpg" alt="Pão Integral">
+                    <h3>Pão Integral</h3>
+                    <p>R$ 0,80</p>
+                </div>
+
+                <div class="produto">
+                    <img class="img_produto" src="./assets/img/broademilho.jpg" alt="Broa de Milho">
+                    <h3>Broa de Milho</h3>
+                    <p>R$ 7,00</p>
+                </div>
+
+                <div class="produto">
+                    <img class="img_produto" src="./assets/img/geleia.jpeg" alt="Pão na Chapa com Queijo">
+                    <h3>Geleia de morango</h3>
+                    <p>R$ 15,00</p>
+                </div>
+
+                <div class="produto">
+                    <img class="img_produto" src="./assets/img/brioche.jpg" alt="Pão na Chapa com Queijo">
+                    <h3> Brioche</h3>
+                    <p>R$ 6,00</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="assinatura-de-paes">
+            <h2>Assinatura de pães</h2>
+            <h3>Receba nossos pães fresquinhos toda semana com descontos exclusivos para assinantes!</h3>
+            <button class="button-assinar" onclick="window.location.href='/assinaturas/index_assinaturas.html'">
+                Assine agora!
+            </button>
+        </section>
+
+        <section class="opinioes-feedbacks">
+            <h2>Opiniões e Feedbacks</h2>
+            <h4>"O melhor pão da cidade! Sempre fresquinho e delicioso." - Ana Maria S.</h4>
+            <h4>"Adoro a variedade de doces artesanais. Recomendo a todos!" - João Filipe P.</h4>
+        </section>
+
+        <section class="comunidade">
+            <h2>Comunidade</h2>
+            <h3>Nos acompanhe nas redes e participe de nossos eventos comunitários. Junte-se à nossa família Delícias!
+            </h3>
+            <section class="midias-container">
+
+                <!-- Instagram -->
+                <div class="midia instagram">
+                    <blockquote class="instagram-media"
+                        data-instgrm-permalink="https://www.instagram.com/p/DQaBJTEgXIh/?utm_source=ig_embed&amp;utm_campaign=loading"
+                        data-instgrm-version="14">
+                    </blockquote>
+                    <script async src="//www.instagram.com/embed.js"></script>
+                </div>
+
+                <!-- TikTok -->
+                <div class="midia tiktok">
+                    <blockquote class="tiktok-embed"
+                        cite="https://www.tiktok.com/@artesanaldelicias/video/7569310987635952904"
+                        data-video-id="7569310987635952904" style="max-width: 100%; min-width: 300px;">
+                        <section>
+                            <a target="_blank"
+                                href="https://www.tiktok.com/@artesanaldelicias?refer=embed">@artesanaldelicias</a>
+                            <p>O sabor que abraçar 🥰</p>
+                        </section>
+                    </blockquote>
+                    <script async src="https://www.tiktok.com/embed.js"></script>
+                </div>
+
+            </section>
+    </main>
+    </section>
+
+    <?php require './includes/footer.php'; ?>
+</body>
+</html>
